@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Sencha Touch</title>
+	<script type="text/javascript" src="framework/sencha-touch-debug.js"></script>
+
+	<script type="text/javascript">
+	Ext.define("user", {
+		name : null,
+		constructor: function(name) {
+			this.name= name;
+		},
+		getName: function() {
+			return this.name;
+		}
+	});
+	
+	var user1 = new User("Sencha");
+	var user2 = Ext.create("User", "Touch");
+	
+	console.log("user1.name:" + user1.name);
+	console.log("user2.name:" + user2.name);
+	
+	
+	
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
